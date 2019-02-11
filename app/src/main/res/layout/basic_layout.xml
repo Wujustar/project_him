@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/base_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dddddd"
+        android:layout_alignParentTop="true">
+
+        <android.support.v7.widget.SearchView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content">
+
+
+
+        </android.support.v7.widget.SearchView>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#dddddd"
+            android:src="@drawable/etc_button_on_searchbar"
+            android:layout_marginLeft="10dp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/line1_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/base_toolbar"
+        android:background="#aaaaaa"
+        android:orientation="vertical" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/base_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/base_tabLayout"
+        android:layout_below="@+id/line1_linearLayout">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="3"
+            android:rowCount="2">
+
+        </GridLayout>
+
+    </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/base_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    </android.support.design.widget.TabLayout>
+
+
+</RelativeLayout>
